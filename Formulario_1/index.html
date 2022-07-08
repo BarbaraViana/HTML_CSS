@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>FandonOneDirection</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">One Direction</h1>
+        <br>
+        <h2 id="subtitulo">Cadastro de Fandon</h2>
+        <br>
+        <p>Para participar do maior cadastro de fãs da banda One Direction</p>
+
+        <p>Preencher os campos abaixo com suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <br>
+                <label for="nome"><strong>Nome: </strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong> </label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email"><strong>Email:</strong> </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label><strong>1º De qual boyband você é fã Atualmente?</strong></label>
+            <br>
+            <label>
+                <input type="radio" name="onedirection" value="onedirection" checked>One Direction
+               
+            </label>
+            <label>
+                <input type="radio" name="backstreetboys" value="backstreetboys">Back Street Boys
+               
+            </label>
+            <label>
+                <input type="radio" name="nsync" value="nsync">Nsync
+               
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="favorito"><strong>2º Quem é o seu garoto favorito?</strong></label>
+            <br>
+            <select name="favorito" id="favorito">
+                <option selected disabled value="" class="campo">Selecione</option>
+                <option class="campo">Niall Horan</option>
+                <option>Zayn Malik</option>
+                <option>Liam Payne</option>
+                <option>Louis Tomlinson</option>
+                <option>Harry Styles</option>
+            </select>
+        </div>
+        <br>
+        <fieldset class="grupo">
+
+            <div>
+                <label><strong>3º Sua conquista mais que especial da banda:</strong></label>
+                <br>
+                <input type="checkbox" id="mimo1" name="mimo1" value="Selfie Com os meninos">
+                <label for="mimo1">Foto Com os Meninos</label><br>
+                <input type="checkbox" id="mimo2" name="mimo2" value="Midia fisica dos meninos">
+                <label for="mimo2">Midia fisica dos meninos</label><br>
+                <input type="checkbox" id="mimo3" name="mimo3" value="Comprovante de participacao em show">
+                <label for="mimo3">Comprovante de participação em show</label><br>
+                <input type="checkbox" id="mimo4" name="mimo4" value="poster">
+                <label for="mimo4">poster</label><br>
+                <input type="checkbox" id="mimo5" name="mimo5" value="Camiseta">
+                <label for="mimo5">Camiseta</label><br>
+                <input type="checkbox" id="mimo6" name="mimo6" value="bandana">
+                <label for="mimo5">Bandana</label><br>
+                <input type="checkbox" id="mimo7" name="mimo4" value="outros">
+                <label for="mimo5">Outros</label>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <br>
+            <label><strong>Conte um pouco da sua história:</strong></label>
+            <textarea rows="6" style="width: 26em;" name="historia" id="historia"></textarea>
+        </div>
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+</body>
+
+</html>
